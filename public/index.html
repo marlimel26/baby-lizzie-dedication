@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Join us for Baby Lizzie’s dedication on November 7, 2026. RSVP for the church service or the church service and brunch."
+    />
+    <title>Baby Lizzie’s Dedication</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">Baby Lizzie</div>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#event">Event</a>
+          <a href="#rsvp">RSVP</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" id="event">
+          <div class="hero-copy">
+            <p class="eyebrow">With grateful hearts</p>
+            <h1>Baby Lizzie’s Dedication</h1>
+            <p class="date">November 7, 2026</p>
+
+            <p class="intro">
+              We invite you to celebrate this special moment of faith, love, and family as we dedicate Baby Lizzie to the Lord.
+            </p>
+
+            <div class="scripture-card" aria-label="Scripture card">
+              <p class="scripture-quote">“Children are a heritage of the Lord.”</p>
+              <p class="scripture-reference">Psalm 127:3</p>
+            </div>
+
+            <p class="info-copy">
+              The dedication will take place during a church service, followed by an afternoon celebration brunch beginning at approximately <strong>1:30 p.m.</strong>
+            </p>
+
+            <p class="fine-print">
+              The church and brunch venue details will be sent to your email after submitting your RSVP.
+            </p>
+
+            <div class="cta-row">
+              <a href="#rsvp" class="btn-primary">RSVP</a>
+            </div>
+          </div>
+
+          <div class="art-panel" aria-label="Temporary artwork placeholder">
+            <div class="art-frame">
+              <div class="art-placeholder" role="img" aria-label="Temporary illustration placeholder: Black Jesus holding Baby Lizzie, a three-month-old light-skinned baby girl in a gentle, reverent scene. Replace this placeholder with the final artwork.">
+                <span class="art-label">Temporary Artwork Placeholder</span>
+                <span class="art-description">
+                  Final illustration needed: Black Jesus holding Baby Lizzie in a calm, loving, reverent scene.
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="details" aria-label="Invitation details">
+          <div class="detail-card">
+            <h2>Celebrate with us</h2>
+            <p>
+              With grateful hearts, we invite you to celebrate Baby Lizzie’s dedication on November 7, 2026. Join us for this special moment of faith, love, and family as we dedicate her to the Lord.
+            </p>
+          </div>
+
+          <div class="detail-card">
+            <h2>Following the service</h2>
+            <p>
+              Following the church service, an afternoon celebration brunch will begin at approximately 1:30 p.m.
+            </p>
+          </div>
+
+          <div class="detail-card">
+            <h2>RSVP</h2>
+            <p>
+              Please RSVP below and let us know whether you will attend the church service only or both the church service and brunch. The relevant event details will be sent to your email.
+            </p>
+          </div>
+        </section>
+
+        <section class="rsvp-section" id="rsvp" aria-labelledby="rsvp-heading">
+          <div class="section-heading">
+            <p class="eyebrow">Please respond</p>
+            <h2 id="rsvp-heading">RSVP for Baby Lizzie’s Dedication</h2>
+          </div>
+
+          <form id="rsvp-form" class="rsvp-form" novalidate>
+            <div class="field-group">
+              <label for="submitter-name">Name of person submitting the RSVP</label>
+              <input id="submitter-name" name="submitterName" type="text" autocomplete="name" required />
+            </div>
+
+            <div class="field-group">
+              <label for="attendee-names">Names of all attendees</label>
+              <textarea id="attendee-names" name="attendeeNames" rows="3" required></textarea>
+            </div>
+
+            <div class="field-group">
+              <label for="total-attendees">Total number of attendees</label>
+              <input id="total-attendees" name="totalAttendees" type="number" min="1" step="1" required />
+              <small>The total includes the person submitting the form if they are attending.</small>
+            </div>
+
+            <div class="field-group">
+              <label for="email">Email address</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+            </div>
+
+            <fieldset class="field-group attendance-group">
+              <legend>Attendance selection</legend>
+              <label class="radio-option">
+                <input type="radio" name="attendance" value="church-service-only" required />
+                <span>Church service only</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="attendance" value="church-service-and-brunch" required />
+                <span>Church service and brunch</span>
+              </label>
+              <small>The attendance selection applies to everyone listed in that submission. Separate RSVPs are needed if members of a party have different attendance plans.</small>
+            </fieldset>
+
+            <div class="honeypot" aria-hidden="true">
+              <label for="company">Company</label>
+              <input id="company" name="company" type="text" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <button class="btn-primary submit-btn" type="submit">RSVP</button>
+            <p id="form-message" class="form-message" aria-live="polite"></p>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
